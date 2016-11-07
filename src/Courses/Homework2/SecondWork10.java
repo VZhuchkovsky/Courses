@@ -16,14 +16,15 @@ public class SecondWork10 {
         System.out.print("Введите b: ");
         b = scanner.nextInt();
         System.out.println();
+        int c = a*b;
 
         if(a==0 && b==0){
             System.out.println("х - любой.");
         }
-        else if(a==0 | b==0){
+        else if(a==0 || b==0){
             System.out.println("x = 0");
         }
-        else if(a/b < 0){
+        else if(c < 0){
             System.out.println("х1 = 0");
             double x2 = Math.sqrt(-b/a);
             double x3 = -x2;
