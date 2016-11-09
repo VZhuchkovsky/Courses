@@ -15,41 +15,46 @@ import java.util.Scanner;
 
 
 public class SecondWork7 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         int number = 0;
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Ввежите трёхзначное число: ");
-        number = scanner.nextInt();
-        int hundreds = number / 100;
-        int tens = (number - hundreds*100)/10;
-        int ones = (number - hundreds*100 - tens*10);
+        System.out.print("Введите трёхзначное число: ");
+
 
         //System.out.println(hundreds + " " + tens + " " + ones);
-        if (number < 100 && number > 999) {
+        /*if (number < 100 && number > 999) {
             System.out.println("Ошибка. Число не трёхзначное.");
         } else {
+*/
 
-            if(hundreds > ones){
-                System.out.println("Первая цифра больше последней: " + hundreds + " > " + ones);
-            }
-            else{
-                System.out.println("Первая цифра меньше последней: " + hundreds + " < " + ones);
-            }
+        do {
+            number = scanner.nextInt();
 
-            if(hundreds > tens){
-                System.out.println("Первая цифра больше второй: " + hundreds + " > " + tens);
-            }
-            else{
-                System.out.println("Первая цифра меньше второй: " + hundreds + " < " + tens);
-            }
+        } while (number < 100 || number > 999);
+        int hundreds = number / 100;
+        int tens = (number - hundreds * 100) / 10;
+        int ones = (number - hundreds * 100 - tens * 10);
 
-            if(tens > hundreds){
-                System.out.println("Вторая цифра больше последней: " + tens + " > " + hundreds);
-            }
-            else{
-                System.out.println("Вторая цифра меньше последней: " + tens + " < " + hundreds);
-            }
+
+        if (hundreds > ones) {
+            System.out.println("Первая цифра больше последней: " + hundreds + " > " + ones);
+        } else {
+            System.out.println("Первая цифра меньше последней: " + hundreds + " < " + ones);
+        }
+
+        if (hundreds > tens) {
+            System.out.println("Первая цифра больше второй: " + hundreds + " > " + tens);
+        } else {
+            System.out.println("Первая цифра меньше второй: " + hundreds + " < " + tens);
+        }
+
+        if (tens > ones) {
+            System.out.println("Вторая цифра больше последней: " + tens + " > " + ones);
+        } else {
+            System.out.println("Вторая цифра меньше последней: " + tens + " < " + ones);
         }
 
     }
 }
+
+
