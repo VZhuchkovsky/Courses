@@ -73,7 +73,7 @@ public class ThirdWork3 {
         }
 
         System.out.println();
-        System.out.println(digit[1]);
+      //  System.out.println(digit[1]);
 
     }
 }

@@ -18,8 +18,8 @@ public class ThirdWork6 {
         if (k < 1 || k > 30) {
             System.out.println("Ошибка. k не принадлежит интервалу от 1 до 30");
         } else {
-            for (int x = 1; x <= 30; x++) {
-                for (int y = 1; y <= 30; y++) {
+            for (int x = 1; x <= 15; x++) {
+                for (int y = 1; y <= 15; y++) {
                     if ((Math.pow(x, 2) + Math.pow(y, 2) == Math.pow(k, 2))) {
                         System.out.println("Решение х = " + x + "; y = " + y);
                     }
