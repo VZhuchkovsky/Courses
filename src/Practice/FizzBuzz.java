@@ -1,22 +1,20 @@
 package Practice;
 
 
+import java.util.Scanner;
+
 /**
  * Created by Vlad on 22.10.2016.
  */
 public class FizzBuzz {
 
     public static void main(String[] args) {
-        /*
-        int max = 100;
-        if(args.length > 0){
-            max = Integer.parseInt(args[0]);
-        }
-        for(int i = 1; i <= max; i++){
-            System.out.println(FizzBuzz(i));
-        }
-        */
-        FizzBuzz(100);
+        //FizzBuzz(100);
+        int n = 0;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("fizzbuzz ");
+        n = sc.nextInt();
+        FizzBuzz(n);
     }
 
     public static String FizzBuzz(int n) {
