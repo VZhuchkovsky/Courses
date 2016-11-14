@@ -14,22 +14,30 @@ public class FourthWork5 {
 
         for (int i = 0; i < a.length; i++) {
             a[i] = rnd.nextInt(100);
-            System.out.println("Элемент номер " + (i) + ": " + a[i]);
+            System.out.println("Элемент номер " + (i + 1) + ": " + a[i]);
         }
 
         System.out.println();
 
- b:      for (int i = 0; i < a.length; i++) {
-            for (int j = 2; j < a[i]; j++) {
-                if(a[i] % j == 0){
-                    System.out.println("Number " + i + " = " + a[i] + " - complex" );
-                    continue b;
-                }else{
-                    System.out.println("Number " + i + " = " + a[i] + " - not complex" );
-                    continue b;
-                }
+        for (int i = 0; i < a.length; i++){
+            if(IsSimpleNum(a[i]) == false){
+                System.out.println("Элемент номер " + (i + 1) + " равный: " + a[i] + " является простым числом.");
             }
         }
+
     }
+
+    private static boolean IsSimpleNum(int a) {
+        if(a == 2){
+            return true;
+        }
+        else {
+            for (int i = 2; i < a; i++) {
+                if (a % i == 0) return true;
+            }
+            return false;
+        }
+    }
+
 }
 
