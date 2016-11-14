@@ -2,7 +2,7 @@ package Practice;
 
 
 import java.util.Scanner;
-
+//Чекнуть версию Cono
 /**
  * Created by Vlad on 22.10.2016.
  */

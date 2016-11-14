@@ -17,8 +17,10 @@ public class FourthWork5 {
         }
 
         for(int i = 0; i < a.length; i++){
-            for(int j = 2; j <= 5; j++){
+            for(int j = 2; j <= 10; j++){
                 if(a[i] % j == 0){
+                    System.out.println("Число " + a[i] + " является составным");
+                }else{
                     System.out.println("Число " + a[i] + " является простым");
                 }
 
