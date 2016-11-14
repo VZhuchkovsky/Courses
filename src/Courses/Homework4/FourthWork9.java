@@ -23,7 +23,7 @@ public class FourthWork9 {
         System.out.println();
 
         for (int i = 0; i < a.length; i++) {
-            
+
             if (((a[i] % 2) == 0) && ((i % 2) != 0)) {
                 a[i] = 0;
             }
