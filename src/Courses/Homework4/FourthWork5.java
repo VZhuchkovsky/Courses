@@ -19,14 +19,14 @@ public class FourthWork5 {
 
         System.out.println();
 
-       for (int i = 0; i < a.length; i++) {
+ b:      for (int i = 0; i < a.length; i++) {
             for (int j = 2; j < a[i]; j++) {
                 if(a[i] % j == 0){
                     System.out.println("Number " + i + " = " + a[i] + " - complex" );
-                    continue;
+                    continue b;
                 }else{
                     System.out.println("Number " + i + " = " + a[i] + " - not complex" );
-                    continue;
+                    continue b;
                 }
             }
         }
