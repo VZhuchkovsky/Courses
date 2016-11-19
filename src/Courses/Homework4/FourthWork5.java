@@ -1,7 +1,6 @@
 package Courses.Homework4;
 
 import java.util.Random;
-//ДОРАБОТАТЬ
 
 /**
  * Created by Vlad on 12.11.2016.
@@ -19,8 +18,8 @@ public class FourthWork5 {
 
         System.out.println();
 
-        for (int i = 0; i < a.length; i++){
-            if(IsSimpleNum(a[i]) == false){
+        for (int i = 0; i < a.length; i++) {
+            if (IsSimpleNum(a[i])) {
                 System.out.println("Элемент номер " + (i + 1) + " равный: " + a[i] + " является простым числом.");
             }
         }
@@ -28,15 +27,19 @@ public class FourthWork5 {
     }
 
     private static boolean IsSimpleNum(int a) {
-        if(a == 2){
-            return true;
-        }
-        else {
-            for (int i = 2; i < a; i++) {
-                if (a % i == 0) return true;
-            }
+
+        if (a == 0 || a == 1) {
             return false;
         }
+
+        if (a == 2) {
+            return true;
+        }
+
+        for (int i = 2; i < a; i++) {
+            if (a % i == 0) return false;
+        }
+        return true;
     }
 
 }
