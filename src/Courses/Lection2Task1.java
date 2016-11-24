@@ -27,6 +27,5 @@ public class Lection2Task1 {
 
         }
 
-
     }
 }
