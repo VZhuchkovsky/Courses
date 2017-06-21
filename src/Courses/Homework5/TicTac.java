@@ -101,10 +101,9 @@ public class TicTac {
                //  System.out.println();
             }
 
+            System.out.println("Игра начинается.");
 
-            while (gameContinue) {
-
-                System.out.println("Игра начинается.");
+            while (gameContinue) {                
 
                 if (countTurn % 2 != 0) {
                     mark = mark1;
